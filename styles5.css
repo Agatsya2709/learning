@@ -1,0 +1,40 @@
+
+
+
+body{
+    color: #44595b;
+   
+    font-family: "Science Gothic", sans-serif;
+    
+    margin:auto;
+    
+    
+}
+.dis{
+    text-align: center;
+}
+
+ .container{
+    background-image: url("https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExeTlqajV4M25kaGc3czg0Z3ViYWg0OXN6OTdvNTB0eWc5ZnJ4eGk2biZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/iicDrNGWxHmDrIni6j/giphy.gif");
+    background-size: 700px 400px;
+    padding: 150px 0 200px 0;
+    text-align: center;
+ }   
+ h1{
+    text-shadow: 0px 0px 4px #000000;
+ }
+
+.underline{
+    border-bottom: 4px solid white;
+}
+.btn{
+    background-color: white;
+    padding: 10px 5px 10px 5px;
+    border: 1px solid black;
+    font-family: "Science Gothic", sans-serif;
+    color: #44595b;
+}
+img{
+    width: 100px;
+    height: auto;
+}
