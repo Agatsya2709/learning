@@ -25,8 +25,8 @@ function Increment21(){
     score2++;
     score2Hl.innerText=score2;
 } 
-function increment22(){
-    score2+=2;
+function Increment22(){
+    score2= score2+2;
     score2Hl.innerText=score2;
 }
 function Increment23(){
