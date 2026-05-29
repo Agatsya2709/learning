@@ -26,7 +26,7 @@ else{
 }
 messageEl.textContent=message;
 sumEl.textContent="Sum: "+sum;
-cardsEl.textContent="Cards: "+firstcard+" "+secondcard;}
+cardsEl.textContent="Cards: "+cards.join(" ");}
 function newCard(){
    let newcard=6;
     sum+=newcard;
