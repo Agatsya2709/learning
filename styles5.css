@@ -16,7 +16,7 @@ body{
 
  .container{
     background-image: url("https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExeTlqajV4M25kaGc3czg0Z3ViYWg0OXN6OTdvNTB0eWc5ZnJ4eGk2biZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/iicDrNGWxHmDrIni6j/giphy.gif");
-    background-size: 700px 400px;
+    background-size: 100% 400px;
     padding: 150px 0 200px 0;
     text-align: center;
  }   
