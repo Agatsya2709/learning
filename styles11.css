@@ -30,3 +30,10 @@ h1{
     flex-direction:column;
     align-items:center;
 }
+#restart{
+    margin-top:10px;
+    color:#016f32;
+    width:150px;
+    background:goldenrod;
+    padding:5px 10px;
+}

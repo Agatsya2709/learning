@@ -5,6 +5,7 @@
 //}
 let countFL=document.getElementById("count");
 let totalFl=document.getElementById("total");
+let messageEl=document.getElementById("message");
 let count=0;
 let totalcount=0;
 function Increment(){
@@ -14,7 +15,7 @@ function Increment(){
 function save(){
     console.log(count);
     totalcount += count;
-    document.getElementById("message").textContent = document.getElementById("message").textContent + count + " - ";
+    messageEl.textContent = messageEl.textContent + count + " - ";
     count = 0;
     countFL.innerText = count;
     totalFl.innerText = "Total count: " + totalcount;
