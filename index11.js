@@ -58,7 +58,7 @@ cardsEl.textContent = "Cards: ";
 
 for(let i = 0; i < cards.length; i++){
     cardsEl.textContent += cards[i] + " ";
-}of 
+}
 }
 function newCard(){
     if(isalive===true && hasblackjack===false){
