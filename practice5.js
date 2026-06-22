@@ -26,3 +26,19 @@ speedwarning(100, 50);
  const distanceTraveledmiles =[267,345,234,190,299]
     const distanceTraveledkm = distanceTraveledmiles.map(miles => Math.round(miles * 1.60934));
 console.log(distanceTraveledkm);
+// rest parameters
+function setPermission(permissionlevel,...users){
+    users.forEach(user => {
+        console.log(`Setting permission level ${permissionlevel} for user: ${user}`);
+    });
+}
+setPermission("admin", "Alice", "Bob", "Charlie");
+const totalDistance = distanceTraveledmiles.reduce((total, miles) => {
+    return total + miles;
+}, 0);
+
+console.log(`Total distance traveled in miles: ${totalDistance}`);
+
+distanceTraveledkm.forEach((km, index) => {
+    console.log(`Distance traveled in kilometers for trip ${index + 1}: ${km} km`);
+})
