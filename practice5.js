@@ -21,4 +21,8 @@ const speedwarning = (speed, speedLImit) => {
     }
     console.log(`Your speed is ${speed} units per time`);
 }
-speedwarning(100, 50); // Output: Your speed is 50 units per time
+speedwarning(100, 50);
+ // Output: Your speed is 50 units per time
+ const distanceTraveledmiles =[267,345,234,190,299]
+    const distanceTraveledkm = distanceTraveledmiles.map(miles => Math.round(miles * 1.60934));
+console.log(distanceTraveledkm);
