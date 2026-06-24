@@ -40,5 +40,14 @@ const totalDistance = distanceTraveledmiles.reduce((total, miles) => {
 console.log(`Total distance traveled in miles: ${totalDistance}`);
 
 distanceTraveledkm.forEach((km, index) => {
+    km=km*8.0
     console.log(`Distance traveled in kilometers for trip ${index + 1}: ${km} km`);
 })
+
+function notifyuser(notification){
+    notification()
+}
+const emailNotification = () => {
+    console.log("You have a new email notification!");
+}
+notifyuser(emailNotification);
