@@ -3,6 +3,7 @@ fetch('https://apis.scrimba.com/dog.ceo/api/breeds/images/random')
   .then(response => response.json())//.json to convert the json file to js
   .then(data => {console.log(data)
     
+  
     const imgElement = document.createElement('img');
     imgElement.src = data.message;
    
