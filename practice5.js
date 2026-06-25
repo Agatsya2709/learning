@@ -51,3 +51,11 @@ const emailNotification = () => {
     console.log("You have a new email notification!");
 }
 notifyuser(emailNotification);
+// rejected promise await and async
+//       try{
+//       }
+//       catch(error){
+//           console.error("An error occurred:", error);
+//       }finally{
+//           console.log("Execution completed.");
+//       }
