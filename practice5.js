@@ -1,17 +1,17 @@
 arr=[1, 2, 3]
-const newarr = arr.slice(0, 3);
+ const newarr = arr.slice(0, 3);
 let constaarr= arr.splice(1,1,3.5)
 console.log(newarr); // Output: [1, 2, 3]
-console.log(constaarr);
-console.log(arr); 
+ console.log(constaarr);
+ console.log(arr); 
 
 arr.forEach((element,index) => {
     console.log(`Element at index ${index} is ${element}`);
 })
 const spend= (amount) => {
-    console.log(`You spent ${amount}`);
+     console.log(`You spent ${amount}`);
 }
-spend(10); // Output: You spent 10
+ spend(10); // Output: You spent 10
 
 const speedwarning = (speed, speedLImit) => {
     if (speed > speedLImit) {
@@ -20,42 +20,43 @@ const speedwarning = (speed, speedLImit) => {
         console.log(`Your speed is within the limit of ${speedLImit} units per time.`);
     }
     console.log(`Your speed is ${speed} units per time`);
-}
-speedwarning(100, 50);
- // Output: Your speed is 50 units per time
- const distanceTraveledmiles =[267,345,234,190,299]
-    const distanceTraveledkm = distanceTraveledmiles.map(miles => Math.round(miles * 1.60934));
-console.log(distanceTraveledkm);
-// rest parameters
+ }
+ speedwarning(100, 50);
+ //Output: Your speed is 50 units per time
+  const distanceTraveledmiles =[267,345,234,190,299]
+     const distanceTraveledkm = distanceTraveledmiles.map(miles => Math.round(miles * 1.60934));
+ console.log(distanceTraveledkm);
+// // rest parameters
 function setPermission(permissionlevel,...users){
     users.forEach(user => {
         console.log(`Setting permission level ${permissionlevel} for user: ${user}`);
     });
-}
+ }
 setPermission("admin", "Alice", "Bob", "Charlie");
-const totalDistance = distanceTraveledmiles.reduce((total, miles) => {
-    return total + miles;
-}, 0);
+ const totalDistance = distanceTraveledmiles.reduce((total, miles) => {
+    return total + miles; }, 0);
 
 console.log(`Total distance traveled in miles: ${totalDistance}`);
 
 distanceTraveledkm.forEach((km, index) => {
-    km=km*8.0
-    console.log(`Distance traveled in kilometers for trip ${index + 1}: ${km} km`);
+     km=km*8.0
+     console.log(`Distance traveled in kilometers for trip ${index + 1}: ${km} km`);
 })
 
-function notifyuser(notification){
-    notification()
-}
-const emailNotification = () => {
-    console.log("You have a new email notification!");
-}
+ function notifyuser(notification){
+   notification()
+ }
+ const emailNotification = () => {
+     console.log("You have a new email notification!");
+ }
 notifyuser(emailNotification);
-// rejected promise await and async
-//       try{
-//       }
-//       catch(error){
-//           console.error("An error occurred:", error);
-//       }finally{
-//           console.log("Execution completed.");
-//       }
+// // rejected promise await and async
+// //       try{
+// //       }
+// //       catch(error){
+// //           console.error("An error occurred:", error);
+// //       }finally{
+// //           console.log("Execution completed.");
+// //       }
+const double = arr.map(num1=> num1*2)
+console.log(arr,double)

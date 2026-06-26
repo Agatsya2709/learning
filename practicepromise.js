@@ -1,16 +1,32 @@
-const promise =new Promise((resolve,reject)=>{
-const success= Math.random() > 0.5
-if (success){
-    resolve('operation success')
-}else{
-    reject('opp failed')
+function createPromise() {
+    return new Promise((resolve, reject) => {
+        const success = Math.random() > 0.5;
+
+        if (success) {
+            resolve("Operation Success");
+        } else {
+            reject("Operation Failed");
+        }
+    });
 }
-})
-promise
-//.then(response=> console.log(response))
-try{
-    const response = await promise
-    console.log(response)
-}catch(err){
-    console.log(err)
+
+async function run() {
+    try {
+        const promise1 = createPromise();
+        const promise2 = createPromise();
+        const promise3 = createPromise();
+
+        const result = await Promise.all([
+            promise1,
+            promise2,
+            promise3
+        ]);
+
+        console.log(result);
+
+    } catch (err) {
+        console.log("Error:", err);
+    }
 }
+
+run();
